@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Code Editor</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script src="src/jquery.ba-throttle-debounce.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Online Code Editor</h1>
-        <button>Run</button>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>Result</li>
+    <div id="container">
+        <div id="heading">
+            Online Code Editor
+        </div>
+        <!-- <button class="run-btn">Run</button> -->
+        <ul id="btn-box">
+            <li id="html-btn" class="btn selected">HTML</li>
+            <li id="css-btn" class="btn">CSS</li>
+            <li id="js-btn" class="btn">JavaScript</li>
+            <li id="result-btn" class="btn selected">Result</li>
         </ul>
-    </header>
+    </div>
     <div class="container">
         <div>
-            <label for="html">HTML</label><br>
-            <input class="html" type="textarea">
+            <textarea id="html-container" cols="30" rows="10" placeholder="HTML"></textarea>
         </div>
         <div>
-            <label for="css">CSS</label><br>
-            <input class="css" type="textarea">
+            <textarea id="css-container" cols="30" rows="10" placeholder="CSS"></textarea>
         </div>
         <div>
-            <label for="js">JS</label><br>
-            <input class="js" type="textarea">
+            <textarea id="js-container" cols="30" rows="10" placeholder="JavaScript"></textarea>
         </div>
         <div>
-            <label for="result">Result</label><br>
-            <input class="result" disabled type="textarea">
+            <iframe id="result"></iframe>
         </div>
     </div>
+    <script src="src/script.js"></script>
 </body>
 </html>
