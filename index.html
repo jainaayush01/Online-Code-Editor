@@ -16,24 +16,24 @@
         </div>
         <!-- <button class="run-btn">Run</button> -->
         <ul id="btn-box">
-            <li id="html-btn" class="btn selected">HTML</li>
-            <li id="css-btn" class="btn">CSS</li>
-            <li id="js-btn" class="btn">JavaScript</li>
-            <li id="result-btn" class="btn selected">Result</li>
+            <li id="html" class="btn selected">HTML</li>
+            <li id="css" class="btn">CSS</li>
+            <li id="js" class="btn">JavaScript</li>
+            <li id="result" class="btn selected">Result</li>
         </ul>
     </div>
     <div class="container">
         <div>
-            <textarea id="html-container" cols="30" rows="10" placeholder="HTML"></textarea>
+            <textarea id="html-container" class="panel" cols="30" rows="10" placeholder="HTML"></textarea>
         </div>
         <div>
-            <textarea id="css-container" cols="30" rows="10" placeholder="CSS"></textarea>
+            <textarea id="css-container" class="panel hidden" cols="30" rows="10" placeholder="CSS"></textarea>
         </div>
         <div>
-            <textarea id="js-container" cols="30" rows="10" placeholder="JavaScript"></textarea>
+            <textarea id="js-container" class="panel hidden" cols="30" rows="10" placeholder="JavaScript"></textarea>
         </div>
         <div>
-            <iframe id="result"></iframe>
+            <iframe id="result-container" class="panel"></iframe>
         </div>
     </div>
     <script src="src/script.js"></script>
