@@ -37,9 +37,23 @@
     cursor: pointer;
 }
 
-li:hover {
+li:hover, .run-btn:hover {
     background-color: #fff;
     color: #000;
+}
+
+.run-btn {
+    float: right;
+    margin-right: 10px;
+    background-color: #000;
+    position: relative;
+    top: -10px;    
+    padding: 8px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 #html-code {
