@@ -7,17 +7,17 @@ function run () {
     result.prop("contentWindow").eval(jsCode);
 }
 
-$("#html-container").keyup(run);
-$("#css-container").keyup(run);
-$("#js-container").keyup(run);
+$("#html-container").on("keypress change paste", run);
+$("#css-container").on("keypress change paste", run);
+$("#js-container").on("keypress change paste", run);
 
 $(".btn").click(function () {
     $(this).toggleClass("selected");
     var containerId = "#" + this.id + "-container";
     $(containerId).toggleClass("hidden");
     $(".panel").width(($(window).width() / ($(".selected").length)) - 25);
-    $(".panel").height($(window).height() - $("#container").height() - 25);
+    $(".panel").height($(window).height() - $("#container").height() - 15);
 });
 
 $(".panel").width($(window).width() / ($(".selected").length) - 25);
-$(".panel").height($(window).height() - $("#container").height() - 25);
+$(".panel").height($(window).height() - $("#container").height() - 15);

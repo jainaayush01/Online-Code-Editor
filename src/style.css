@@ -64,6 +64,7 @@ li:hover {
     padding: 5px;
     float: left;
     resize: none;
+    color: black;
 }
 
 .panel::placeholder {
@@ -77,5 +78,4 @@ li:hover {
 iframe {
     padding: 0px;
     margin: 0px;
-    /* border: 0px; */
 }
