@@ -15,9 +15,10 @@ $(".btn").click(function () {
     $(this).toggleClass("selected");
     var containerId = "#" + this.id + "-container";
     $(containerId).toggleClass("hidden");
-    $(".panel").width(($(window).width() / ($(".selected").length)) - 25);
+    $(containerId).toggleClass("nh");
+    // $(".panel").width(($(window).width() / ($(".selected").length)) - 25);
     $(".panel").height($(window).height() - $("#container").height() - 15);
 });
 
-$(".panel").width($(window).width() / ($(".selected").length) - 25);
+// $(".panel").width($(window).width() / ($(".selected").length) - 25);
 $(".panel").height($(window).height() - $("#container").height() - 15);

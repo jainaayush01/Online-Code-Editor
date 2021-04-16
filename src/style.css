@@ -76,7 +76,6 @@ li:hover, .run-btn:hover {
 
 .panel {
     padding: 5px;
-    float: left;
     resize: none;
     color: black;
 }
@@ -92,4 +91,12 @@ li:hover, .run-btn:hover {
 iframe {
     padding: 0px;
     margin: 0px;
+}
+
+.editor {
+    display: flex;
+}
+
+.nh {
+    width: 100%;
 }

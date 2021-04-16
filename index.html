@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Code Editor</title>
-    <link rel="stylesheet" href="src/style.css">
-    <script src="src/jquery-3.6.0.min.js"></script>
-    <script src="src/jquery.ba-throttle-debounce.js"></script>
-</head>
-<body>
-    <div id="container">
-        <div id="heading">
-            Online Code Editor
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online Code Editor</title>
+        <link rel="stylesheet" href="src/style.css" />
+        <script src="src/jquery-3.6.0.min.js"></script>
+        <script src="src/jquery.ba-throttle-debounce.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="heading">Online Code Editor</div>
+            <ul id="btn-box">
+                <li id="html" class="btn selected">HTML</li>
+                <li id="css" class="btn">CSS</li>
+                <li id="js" class="btn">JavaScript</li>
+                <li id="result" class="btn selected">Result</li>
+            </ul>
+            <div class="run-btn" onclick="run()">Run</div>
         </div>
-        <ul id="btn-box">
-            <li id="html" class="btn selected">HTML</li>
-            <li id="css" class="btn">CSS</li>
-            <li id="js" class="btn">JavaScript</li>
-            <li id="result" class="btn selected">Result</li>
-        </ul>
-        <div class="run-btn" onclick="run()">Run</div>
-    </div>
-    <div class="container">
-        <div>
-            <textarea id="html-container" class="panel" cols="30" rows="10" placeholder="HTML"></textarea>
+        <div class="editor">
+            <textarea
+                id="html-container"
+                class="panel nh"
+                cols="30"
+                rows="10"
+                placeholder="HTML"
+            ></textarea>
+            <textarea
+                id="css-container"
+                class="panel hidden"
+                cols="30"
+                rows="10"
+                placeholder="CSS"
+            ></textarea>
+            <textarea
+                id="js-container"
+                class="panel hidden"
+                cols="30"
+                rows="10"
+                placeholder="JavaScript"
+            ></textarea>
+            <iframe id="result-container" class="panel nh"></iframe>
         </div>
-        <div>
-            <textarea id="css-container" class="panel hidden" cols="30" rows="10" placeholder="CSS"></textarea>
-        </div>
-        <div>
-            <textarea id="js-container" class="panel hidden" cols="30" rows="10" placeholder="JavaScript"></textarea>
-        </div>
-        <div>
-            <iframe id="result-container" class="panel"></iframe>
-        </div>
-    </div>
-    <script src="src/script.js"></script>
-</body>
+        <script src="src/script.js"></script>
+    </body>
 </html>
